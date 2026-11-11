@@ -1,5 +1,7 @@
 # Node-based tomato FSPM with dual-clock phenology and rule-based leaf pruning
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24128721.svg)](https://doi.org/10.5281/zenodo.24128721)
+
 Model code and analysis scripts for the manuscript
 
 > Kang, J.H., Bae, S., Moon, T., Kim, D. *A node-based functional–structural tomato model with dual-clock phenology and rule-based leaf pruning for greenhouse decision support.* Submitted for publication.
@@ -142,7 +144,11 @@ The `.gitignore` keeps raw and derived data files out of the repository.
 
 ## Citation
 
-Please cite the paper above. To cite the code, use `CITATION.cff` (on GitHub: *Cite this repository*). The DOI of the archived release and the full reference of the paper will be added here.
+Please cite the paper above; its full reference will be added here once it is published. To cite the code:
+
+> Kang, J.H., Bae, S., Moon, T., Kim, D., 2026. Node-based tomato FSPM with dual-clock phenology and rule-based leaf pruning, version 1.0.0. Zenodo. https://doi.org/10.5281/zenodo.24128721
+
+This DOI identifies version 1.0.0, the code used for the manuscript. https://doi.org/10.5281/zenodo.24128720 always resolves to the latest version.
 
 ## License
 
