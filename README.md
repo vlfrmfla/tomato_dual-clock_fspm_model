@@ -28,7 +28,7 @@ The model follows a high-wire tomato plant node by node. Every node keeps its id
 | 🟨 Gold | the number of growing fruits, which slows node appearance |
 | 🟧 Orange | leaf pruning, which removes identified leaves |
 
-Equation numbers in the figure refer to the paper. The table under [Model code](#model-code) lists the module behind each box.
+Equation numbers in the figure refer to the paper. The table under [Model code](#model-code) lists the module behind each box. Click the figure to open it at full size.
 
 ## What is in this repository
 
@@ -69,13 +69,15 @@ sys.path.insert(0, "src")
 from fspm import Params, simulate, truss_table
 from fspm import management as M
 
-p = Params()                                   # defaults; see src/fspm/params.py
-rule = M.TrussLinked(tt_after=235.0)           # leaf-pruning rule R3
+p = Params()                             # defaults; see src/fspm/params.py
+rule = M.TrussLinked(tt_after=235.0)     # leaf-pruning rule R3
 daily, plant = simulate(climate_daily, p, rule, "2023-10-05", "2024-01-11",
                         hourly=climate_hourly, leaf_dw0=10.0, stem_dw0=4.0)
 
-daily[["nodes", "leaves_present", "LAI", "fruit_dw", "et_g", "qd"]]   # one row per day, per plant
-truss_table(plant)                             # dates of appearance, anthesis, set and harvest per truss
+# one row per day, per plant
+daily[["nodes", "leaves_present", "LAI", "fruit_dw", "et_g", "qd"]]
+# dates of appearance, anthesis, fruit set and harvest of each truss
+truss_table(plant)
 ```
 
 ### Climate input
