@@ -1,0 +1,15 @@
+{
+  "leaf_area_pot": 0.04421789743921713,
+  "fruit_W_pot": 11.73306715561154,
+  "fruit_priority": 0.5,
+  "SLA": 0.014623818993973758,
+  "plant_density": 2.6341463414634148,
+  "row_spacing": 2.0,
+  "Vcmax25": 96.11785714285712,
+  "Jmax25": 168.99285714285716,
+  "rd_frac": 0.005909090909090909,
+  "TT_color": 186.5,
+  "transplant": "2025-08-11",
+  "start": "2025-09-01",
+  "prune_rule": "R3 batch (assumed)"
+}

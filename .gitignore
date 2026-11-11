@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Measured and derived data are not tracked (see README, Data)
+/A7-6_tomato_redcan/
+/data_analysis/
+/expLog/
+/figures/
+/data_external/*
+!/data_external/aihub/
+/data_external/aihub/*
+!/data_external/aihub/agg.py
+!/data_external/aihub/agg_c.py
+/data_processed/*
+!/data_processed/params_m2.json
+!/data_processed/hg/
+/data_processed/hg/*
+!/data_processed/hg/params_hg.json

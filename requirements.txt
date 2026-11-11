@@ -1,0 +1,6 @@
+numpy>=1.23
+pandas>=2.0
+scipy>=1.9
+statsmodels>=0.13
+matplotlib>=3.7
+openpyxl>=3.1    # only for src/build_obs.py, which reads the survey workbooks
