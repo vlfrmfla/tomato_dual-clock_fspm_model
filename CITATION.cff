@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below, and cite the paper once it is published."
+type: software
+title: "Node-based tomato FSPM with dual-clock phenology and rule-based leaf pruning"
+abstract: "A node-based functional-structural tomato model for greenhouse decision support. Nodes keep their identity, so leaf-pruning rules that read the simulated crop state remove particular leaves on a weekly work schedule. Thermal time and fruit load drive leaf and truss appearance, the source-sink ratio modulates progress from anthesis to fruit set, and fruit temperature drives ripening. Light, photosynthesis, respiration and transpiration are computed hourly for each leaf with a directional Beer's law model of hedgerow canopies. The repository holds the model, the scripts for calibration, evaluation, scenarios and figures, and the calibrated parameter sets."
+authors:
+  - family-names: Kang
+    given-names: Jun Hyun
+    affiliation: "Smart Farm Research Center, Korea Institute of Science and Technology (KIST), Gangneung, Republic of Korea"
+  - family-names: Bae
+    given-names: Sunghan
+    affiliation: "Department of Horticultural Science, Chungnam National University, Daejeon, Republic of Korea"
+  - family-names: Moon
+    given-names: Taewon
+    affiliation: "Smart Farm Research Center, Korea Institute of Science and Technology (KIST), Gangneung, Republic of Korea"
+  - family-names: Kim
+    given-names: Dongpil
+    affiliation: "Department of Horticultural Science, Chungnam National University, Daejeon, Republic of Korea"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/vlfrmfla/tomato_dual-clock_fspm_model"
+keywords:
+  - functional-structural plant model
+  - tomato
+  - greenhouse
+  - leaf pruning
+  - phenology
+  - source-sink ratio
+  - transpiration
+  - decision support

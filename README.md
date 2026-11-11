@@ -142,4 +142,8 @@ The `.gitignore` keeps raw and derived data files out of the repository.
 
 ## Citation
 
-Please cite the paper above. This section will be updated with the full reference and an archived release of the code.
+Please cite the paper above. To cite the code, use `CITATION.cff` (on GitHub: *Cite this repository*). The DOI of the archived release and the full reference of the paper will be added here.
+
+## License
+
+MIT License; see `LICENSE`. The license covers the code and the parameter files in this repository, not the AI-Hub dataset.
