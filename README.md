@@ -14,6 +14,22 @@ The model follows a high-wire tomato plant node by node. Every node keeps its id
 - **Leaf processes.** Photosynthesis (Farquhar–von Caemmerer–Berry), dark respiration and Penman–Monteith transpiration are computed hourly for each leaf.
 - **Leaf pruning.** Rules read the simulated crop state and act on a weekly work schedule.
 
+## Model overview
+
+<p align="center">
+  <img src="docs/model_processes.png" alt="Processes of the model and their links: canopy structure, hourly leaf physiology and the dual clock" width="860">
+</p>
+
+**Processes of the model and their links** (Supplementary Fig. S2 of the paper). Left: the canopy structure and the hourly processes of each leaf. Right: the dual clock, that is, the structural clock (node and leaf appearance, expansion, aging and removal) and the clock of each truss (appearance, anthesis, fruit set, fruit dry-matter growth, coloring and harvest).
+
+| Color | Link |
+|---|---|
+| 🟦 Blue | the source–sink ratio, which modulates progress to fruit set |
+| 🟨 Gold | the number of growing fruits, which slows node appearance |
+| 🟧 Orange | leaf pruning, which removes identified leaves |
+
+Equation numbers in the figure refer to the paper. The table under [Model code](#model-code) lists the module behind each box.
+
 ## What is in this repository
 
 | Path | Content |
@@ -23,6 +39,7 @@ The model follows a high-wire tomato plant node by node. Every node keeps its id
 | `data_external/aihub/agg.py`, `agg_c.py` | Scripts that turn the AI-Hub label archives into the tables the evaluation reads |
 | `data_processed/params_m2.json`, `data_processed/hg/params_hg.json` | Calibrated parameter sets of the two crops (Table 1 of the paper) |
 | `examples/demo_synthetic.py` | A run with an invented climate, which needs no measured data |
+| `docs/model_processes.png` | The process diagram shown above |
 
 Measured data are **not** included; see [Data](#data). Without them, the demo and the model itself run, but the scripts in `src/` that reproduce the paper do not.
 
